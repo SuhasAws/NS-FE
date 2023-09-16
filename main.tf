@@ -315,26 +315,26 @@ module "vnet3" {
 }
 
 module "frontdoor" {
-  soruce = "./modules/contos/platform/connectivity/Networking/ApplicationServices/FrontDoor"
-  resource-group3-name = module.resource-group3.resource-group3-name
-  frontdoor-name = var.frontdoor-name
-  frontfoor-RR-name = var.frontdoor-RR-name
-  frontdoor-RR-accepted_protocols = var.frontdoor-RR-accepted_protocols
-  frontdoor-RR-patterns_to_match = var.frontdoor-RR-patterns_to_match
-  frontdoor-RR-frontend_endpoints = var.frontdoor-RR-frontend_endpoints
-  frontdoor-RR-forwarding_protocol = var.frontdoor-RR-forwarding_protocol
-  frontdoor-RR-backend_pool_name = var.frontdoor-RR-backend_pool_name
-  frontdoor-BPLB-name = var.frontdoor-BPLB-name
-  frontdoor-BPHP-name = var.frontdoor-BPHP-name
-  frontdoor-BP-name = var.frontdoor-BP-name
-  frontdoor-backend-host_header = var.frontdoor-backend-host_header
-  frontdoor-backend-address = var.frontdoor-backend-address
-  frontdoor-backend-http_port = var.frontdoor-backend-http_port
-  frontdoor-backend-https_port = var.frontdoor-backend-https_port
-  frontdoor-backend-load_balancing_name = var.frontdoor-backend-load_balancing_name
-  frontdoor-backend-health_probe_name = var.frontdoor-backend-health_probe_name
-  frontdoor-FE-name = var.frontdoor-FE-name
-  frontdoor-FE-host_name = var.frontdoor-FE-host_name
-  frontdoor-FE-session_affinity_enabled = var.frontdoor-FE-session_affinity_enabled
-  frontdoor-FE-session_affinity_ttl_seconds = var.frontdoor-FE-session_affinity_ttl_seconds
+    source = "./modules/contos/platform/connectivity/Networking/ApplicationServices/FrontDoor"
+    resource-group3-name = module.resource-group3.resource-group3-name
+    frontdoor-name = var.frontdoor-name
+    frontdoor-RR-name = var.frontdoor-RR-name
+    frontdoor-RR-accepted_protocols = var.frontdoor-RR-accepted_protocols
+    frontdoor-RR-patterns_to_match = var.frontdoor-RR-patterns_to_match
+    frontdoor-RR-frontend_endpoints = var.frontdoor-RR-frontend_endpoints
+    frontdoor-RR-forwarding_protocol = var.frontdoor-RR-forwarding_protocol
+    frontdoor-RR-backend_pool_name = var.frontdoor-RR-backend_pool_name
+    frontdoor-BPLB-name = var.frontdoor-BPLB-name
+    frontdoor-BPHP-name = var.frontdoor-BPHP-name
+    frontdoor-BP-name = var.frontdoor-BP-name
+    frontdoor-backend-host_header = var.frontdoor-backend-host_header
+    frontdoor-backend-address = var.frontdoor-backend-address
+    frontdoor-backend-http_port = var.frontdoor-backend-http_port
+    frontdoor-backend-https_port = var.frontdoor-backend-https_port
+    frontdoor-backend-load_balancing_name = var.frontdoor-backend-load_balancing_name
+    frontdoor-backend-health_probe_name = var.frontdoor-backend-health_probe_name
+    frontdoor-FE-name = var.frontdoor-FE-name
+    frontdoor-FE-host_name = var.frontdoor-FE-host_name
+    frontdoor-FE-session_affinity_enabled = var.frontdoor-FE-session_affinity_enabled
+    frontdoor-FE-session_affinity_ttl_seconds = var.frontdoor-FE-session_affinity_ttl_seconds
 }
