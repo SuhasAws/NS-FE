@@ -1,7 +1,7 @@
 variable "resource-group3-name" {}
 variable "frontdoor-name" {}
-variable "frontfoor-RR-name" {}
-variable "rontdoor-RR-accepted_protocols" {}
+variable "frontdoor-RR-name" {}
+variable "frontdoor-RR-accepted_protocols" {}
 variable "frontdoor-RR-patterns_to_match" {}
 variable "frontdoor-RR-frontend_endpoints" {}
 variable "frontdoor-RR-forwarding_protocol" {}

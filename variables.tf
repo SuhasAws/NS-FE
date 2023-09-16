@@ -902,7 +902,7 @@ variable "frontdoor-name" {
     type = string
     description = "Name of the front door"
 }
-variable "frontfoor-RR-name" {
+variable "frontdoor-RR-name" {
     type = string
     description = "routing rule name of frontdoor"
 }

@@ -77,7 +77,7 @@ module "businessunit2" {
 
 module "Security" {
 
-  source = "./modules/contos/platform/connectivity/security"
+  source = "./modules/contos/platform/connectivity/security/KeyVault"
 
   resource-group-name                   = var.resource-group-name
   location                              = var.location
@@ -301,7 +301,7 @@ module "PTS-sb" {
 module "resource-group3" {
     source = "./modules/contos/platform/connectivity/ResourceGroup3"
     resource-group3-name = var.resource-group3-name
-    location2 = var.location2
+    location3 = var.location3
 }
 
 module "vnet3" {
@@ -309,7 +309,7 @@ module "vnet3" {
     vnet3-name = var.vnet3-name
     vnet3-address-space = var.vnet3-address-space
     resource-group3-name = module.resource-group3.resource-group3-name
-    location2 = module.resource-group3.location2
+    location3 = module.resource-group3.location3
     vnet3-subnet3-name = var.vnet3-subnet3-name
     vnet3-subnet3-address_prefixes = var.vnet3-subnet3-address_prefixes
 }
